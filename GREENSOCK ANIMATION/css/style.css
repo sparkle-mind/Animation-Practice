@@ -1,0 +1,460 @@
+/* ========== CSS INDEXING START HERE ========== 
+1.Basic
+2.Variables
+3.Common Css
+4.Header
+5.Body
+6.Footer
+7.Other Page
+8.Responsive
+========== CSS INDEXING END HERE ========== */
+/* ------- START FONTS HERE --------- */
+
+/* ------- END FONTS HERE --------- */
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.eot');
+    src: url('../fonts/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-300.woff') format('woff'),
+        url('../fonts/poppins-v20-latin-300.ttf') format('truetype'),
+        url('../fonts/poppins-v20-latin-300.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot');
+    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff'),
+        url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'),
+        url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.eot');
+    src: url('../fonts/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-500.woff') format('woff'),
+        url('../fonts/poppins-v20-latin-500.ttf') format('truetype'),
+        url('../fonts/poppins-v20-latin-500.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.eot');
+    src: url('../fonts/poppins-v20-latin-600.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-600.woff') format('woff'),
+        url('../fonts/poppins-v20-latin-600.ttf') format('truetype'),
+        url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.eot');
+    src: url('../fonts/poppins-v20-latin-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v20-latin-700.woff2') format('woff2'),
+        url('../fonts/poppins-v20-latin-700.woff') format('woff'),
+        url('../fonts/poppins-v20-latin-700.ttf') format('truetype'),
+        url('../fonts/poppins-v20-latin-700.svg#Poppins') format('svg');
+}
+@font-face {
+    font-family: 'Visby CF';
+    src: url('../fonts/VisbyCF-Medium.eot');
+    src: url('../fonts/VisbyCF-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisbyCF-Medium.woff2') format('woff2'),
+        url('../fonts/VisbyCF-Medium.woff') format('woff'),
+        url('../fonts/VisbyCF-Medium.ttf') format('truetype'),
+        url('../fonts/VisbyCF-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Visby CF';
+    src: url('../fonts/VisbyCF-Light.eot');
+    src: url('../fonts/VisbyCF-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisbyCF-Light.woff2') format('woff2'),
+        url('../fonts/VisbyCF-Light.woff') format('woff'),
+        url('../fonts/VisbyCF-Light.ttf') format('truetype'),
+        url('../fonts/VisbyCF-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Visby CF';
+    src: url('../fonts/VisbyCF-Bold.eot');
+    src: url('../fonts/VisbyCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/VisbyCF-Bold.woff2') format('woff2'),
+        url('../fonts/VisbyCF-Bold.woff') format('woff'),
+        url('../fonts/VisbyCF-Bold.ttf') format('truetype'),
+        url('../fonts/VisbyCF-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* ----------------- Varibles Font & Color ----------------- */
+:root {
+    --Poppins: 'Poppins';
+    --visby-cf: 'Visby CF';
+    --bg-cream: #f9f2f2;
+    --blue: #2f4c6e;
+    --gray: #6a6a6a;
+    --text-gray: #838386;
+    --white: #ffffff;
+    --black: #000000;
+    --footer-pink: #ea80a8;
+    --comman-pink-btn: #db98b7;
+    --pink-sale: #da85a7;
+    --cta-btn: #ea80a8;
+    --btn-hover: #f09ab9;
+    --h1: normal 42px/46px var(--visby-cf);
+    --h2: normal normal 34px/38px var(--visby-cf);
+    --h3: normal normal 32px/36px var(--visby-cf);
+    --h4: normal normal 28px/32px var(--visby-cf);
+    --h5: normal normal 24px/28px var(--visby-cf);
+    --body-big: normal 18px/26px var(--Poppins);
+    --body-small: normal 16px/21px var(--Poppins);
+    --p: normal 14px/16px var(--Poppins);
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+:focus,
+:active {
+    outline: none !important;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    outline: none;
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--black);
+    font-family: var(--Poppins);
+    font-weight: 500;
+    line-height: 1;
+    font-size: 15px;
+    background: var(--white);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/* ------------ FONTS ------------*/
+h1,
+.h1 {
+    font: var(--h1);
+}
+h2,
+.h2 {
+    font: var(--h2);
+}
+h3,
+.h3 {
+    font: var(--h3);
+}
+h4,
+.h4 {
+    font: var(--h4);
+}
+h5,
+.h5 {
+    font: var(--h5);
+}
+.p,
+p {
+    font: var(--p);
+}
+/* -------------- Common Css -------------- */
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.no-wrap {
+    flex-wrap: nowrap;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.direction-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.only-mobile {
+    display: none;
+}
+.only-desktop {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+.btn {
+    padding: 12px 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background: var(--white);
+    line-height: 1;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid var(--footer-pink);
+}
+
+/* GREENSOCK ANIMATION START */
+.animation-main-section {
+    padding: 50px 0;
+}
+.box,
+.purple {
+    width: 200px;
+    height: 200px;
+    background-color: #2f4c6e;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+.box-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.box:nth-of-type(1) {
+    background-color: #da8181;
+}
+.box:nth-of-type(2) {
+    background-color: #a33f3f;
+}
+.box:nth-of-type(3) {
+    background-color: #257ee4;
+}
+.box:nth-of-type(4) {
+    background-color: #29bd42;
+}
+.box:nth-of-type(5) {
+    background-color: #75a529;
+}
+.purple img {
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid #2f4c6e;
+    width: 100%;
+    object-fit: cover;
+}
+.scroll-parent h5 {
+    font-size: 38px;
+}
+.text-animation ,
+.quote{
+    padding: 50px;
+}
+.quote div {
+    font-size: 50px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+}
+#quote {
+    padding: 50px;
+    font-size: 50px;
+    color: #a33f3f;
+    display: inline-block;
+}
+
+#animate {
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #2f4c6e;
+    color: #ffff;
+    font-size: 18px;
+}

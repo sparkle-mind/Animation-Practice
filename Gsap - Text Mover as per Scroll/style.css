@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    overflow-x: hidden;
+    padding: 50px;
+    background-color: coral;
+}
+
+.box h2 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: cursive;
+}
+
+.box .sec-h2{
+  transform: translateX(0vw);
+  text-align: right;
+  -webkit-transform: translateX(0vw);
+  -moz-transform: translateX(0vw);
+  -ms-transform: translateX(0vw);
+  -o-transform: translateX(0vw);
+}

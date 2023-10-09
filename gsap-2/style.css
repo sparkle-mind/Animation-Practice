@@ -1,0 +1,30 @@
+*,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+}
+
+h1{
+    font-size: 50px;
+    color: orange;
+}
+h2{
+    font-size: 40px;
+    color: white;
+}
+h3{
+    font-size: 40px;
+    color: green;
+}
+.wrapper{
+    overflow: hidden;
+}
+.infinite{
+    margin: 50px;
+    color: bisque;
+    font-size: 52px;
+    font-family: cursive;
+}
